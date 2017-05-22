@@ -29,10 +29,15 @@ button {
 	margin: 20px 0;
 	color: white;
 	background: #fb565a;
+	cursor: pointer;
 }
 
 h2, h3, h4 {
 	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
 }
 
 header {
@@ -50,7 +55,6 @@ header {
 
 .topnav {
 	padding: 0;
-	list-style-type: none;
 	display: inline-block;
 	
 }
@@ -74,7 +78,7 @@ header {
 }
 
 .slide1 {
-	background-image: url(../img/bg_slide1.png);
+	background-image: url("../img/bg_slide1.png");
 }
 
 .slide2, .slide3 {
@@ -127,10 +131,16 @@ header {
 	width: 660px;
 }
 
+.desc li:before {
+	content: url("../img/list_style_type.png");
+	vertical-align: 5px;
+	margin-right: 10px;
+}
+
 .map {
 	width:100%;
 	padding: 120px 12%;
-	background-image: url(../img/map.png);
+	background-image: url("../img/map.png");
 }
 
 .contacts {
@@ -210,6 +220,12 @@ Catalog style
 .product {
 	float: left;
 	margin: 15px;
+}
+
+.product:before {
+	content: url("../img/catalog/browser.png");
+	display: block;
+	border-bottom: 1px solid #ccc;
 }
 
 [src*="browser.png"] {
