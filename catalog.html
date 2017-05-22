@@ -4,59 +4,79 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-<!---======================================================================================================================
-	======================================================================================================================--->	
 	<body>
-		<img src="img/bg.png">
-		<header class="header" class="uppercase">
+		<img src="img/bg_ctlg.png">
+		<header class="header">
 			<img src="img/logo.png">
 			<ul class="topnav">
-				<li>студия</li>
-				<li>клиенты</li>
-				<li>магазин</li>
-				<li>контакты</li>
-			</nav>
+				<li><a href="#">студия</a></li>
+				<li><a href="#">клиенты</a></li>
+				<li><a href="index.html">главная</a></li>
+				<li><a href="#">магазин</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
 			<div class="cart">
-				<div class="backet"></div><!--Блок для картинки-->
+				<div class="backet"></div>
 				корзина
 			</div>
 		</header>
-<!--======================================================================================================================-->
 		<main class="main">
-			<div class="sidebar"></div>
-			<div class="content">
-				<div class="sort"></div>
-				<article class="product">
-					<img src="img/catalog/sedona.jpg">
-				</article>
-				<article class="product">
-					<img src="img/catalog/pink.jpg">
-				</article>
-				<article class="product">
-					<img src="img/catalog/borodinski.jpg">
-				</article>
-				<article class="product">
-					<img src="img/catalog/mishka.jpg">
-				</article>
-				<article class="product">
-					<img src="img/catalog/aplus.jpg">
-				</article>
-				<article class="product">
-					<img src="img/catalog/kvas.jpg">
-				</article>
+			<div class="wrapper">
+				<div class="headline">Магазин готовых шаблонов</div>
+				<div class="sidebar">
+					<h4>стоимость:</h4>
+				</div>
+				<div class="content">
+					<div class="sort"></div>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/sedona.jpg">
+					</article>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/pink.jpg">
+					</article>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/borodinski.jpg">
+					</article>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/mishka.jpg">
+					</article>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/aplus.jpg">
+					</article>
+					<article class="product">
+						<img src="img/catalog/browser.png">
+						<img src="img/catalog/kvas.jpg">
+					</article>
+					<div style="clear:both"></div>
+				</div>
 			</div>
 			<div class="map">
-				<div class="contants">
+				<div class="contacts">
 					<h4 class="uppercase">nёrds design studio</h4>
-					191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					<div>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+					<div class="phone">тел. +7(812) 275-75-75</div>
 					<button>напишете нам</button>
 				</div>
 			</div>
 		</main>
-<!--======================================================================================================================-->
-		<footer>
-			<div class="socials"></div>
-			<h3>Давайте дружить, это выгодно!</h3>
+		<footer class="footer">
+			<div class="socials">
+				<button class="icon vk">
+					<img src="img/vk.png">
+				</button>
+				<button class="icon">
+					<img src="img/fb.png">
+				</button>
+				<button class="icon">
+					<img src="img/insta.png">
+				</button>
+			</div>
+			<div class="subtitle">Давайте дружить, это выгодно!</div>
 			Скидка 10% для друзей из социальных сетей.
 		</footer>
 	</body>

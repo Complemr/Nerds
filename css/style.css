@@ -1,0 +1,217 @@
+body {
+	width: 100%;
+	font-family: arial;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+a {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	border: 1px solid blue;
+}
+
+a:active {
+	background: #ff9;
+}
+
+button {
+	border: 0px;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	margin: 20px 0;
+	color: white;
+	background: #fb565a;
+}
+
+h2, h3, h4 {
+	text-transform: uppercase;
+}
+
+header {
+	width: 100%;
+}
+
+header {
+	width: 1160px;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.topnav {
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	
+}
+
+.topnav li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.cart {
+	display: inline-block;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	padding: 100px 0;
+}
+
+.slide1 {
+	background-image: url(../img/bg_slide1.png);
+}
+
+.slide2, .slide3 {
+	display: none;
+}
+
+.box {
+	width: 360px;
+}
+
+.buttons {
+	display: inline-block;
+	margin-left: 40%;
+}
+
+.advertisement {
+	padding: 80px 0;
+}
+
+.adv {
+	width: 300px;
+	float: left;
+	margin-right: 100px;
+}
+
+.btnGreen {
+	background: #00ca74;
+}
+
+.btnYollow {
+	background: #efc849;
+}
+
+.promo {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 80px 0;
+}
+
+.page {
+	float: right;
+}
+
+.col {
+	width: 33%;
+	float: left;
+}
+
+.desc {
+	width: 660px;
+}
+
+.map {
+	width:100%;
+	padding: 120px 12%;
+	background-image: url(../img/map.png);
+}
+
+.contacts {
+	width: 250px;
+	padding: 30px 50px;
+	background: white;
+}
+
+.phone {
+	padding: 10px 0;
+}
+
+.footer {
+	width: 1200px;
+	padding: 80px 0;
+	margin: 0 auto;
+}
+
+.socials {
+	margin-right: 140px;
+	float: left;
+}
+
+.icon {
+	border-radius: 50%;
+	width: 60px;
+	text-align: center;
+	padding: 16px 0;
+	margin: 0 5px;
+	float: left;
+	background: #e1e1e1;
+}
+
+.vk {
+	padding: 19px 0;
+}
+
+.subtitle {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+[src*="bg"] {
+	width: 100%;
+	position: absolute;
+	z-index: -1000;
+}
+
+/*================================================================================================================
+Catalog style
+==================================================================================================================*/
+
+.headline {
+	font-size: 55px;
+	text-align: center;
+	padding: 110px;
+}
+
+.sidebar {
+	border: 2px solid red;
+	height: 800px;
+	width: 260px;
+	float: left;
+	margin-right: 140px;
+}
+
+.content {
+	border: 2px solid blue;
+	padding-left: 400px;
+}
+
+.sort {
+	border: 2px solid green;
+	height: 50px;
+}
+
+.product {
+	float: left;
+	margin: 15px;
+}
+
+[src*="browser.png"] {
+	display: block;
+}

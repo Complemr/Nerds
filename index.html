@@ -5,150 +5,156 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-<!---======================================================================================================================
-	======================================================================================================================--->	
 	<body>
 		<img src="img/bg.png">
-		<header class="header" class="uppercase">
+		<header class="header">
 			<img src="img/logo.png">
 			<ul class="topnav">
-				<li>студия</li>
-				<li>клиенты</li>
-				<li>магазин</li>
-				<li>контакты</li>
-			</nav>
+				<li><a href="#">студия</a></li>
+				<li><a href="#">клиенты</a></li>
+				<li><a href="#">магазин</a></li>
+				<li><a href="#">контакты</a></li>
+				<li><a href="catalog.html">каталог</a></li>
+			</ul>
 			<div class="cart">
-				<div class="backet"></div><!--Блок для картинки-->
+				<div class="backet"></div>
 				корзина
 			</div>
 		</header>
-<!---======================================================================================================================--->
 		<main class="main">
-			<div class="slider">
-				<div class="slide1">
-					<div class="box">
-						<div class="headline">Долго, дорого, скурпулёзно.</div>
-						<div class="slogan">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide1">
+						<div class="box">
+							<h1>Долго, дорого, скурпулёзно.</h1>
 							Математически вверенный дизайн
 							для вашего сайта или мобильного приложения
+							<button>узнать больше</button>
 						</div>
-						<button>узнать больше</button>
 					</div>
-				</div>
-				<div class="slide2">
-					<div class="box">
-						<div class="headline">Любим математику как никто другой</div>
-						<div class="slogan">
+					<div class="slide2">
+						<div class="box">
+							<h1>Любим математику как никто другой</h1>
 							Никакого креатива, толька математические формулы
 							для расчёта идеальных пропорций.
+							<button>узнать больше</button>
 						</div>
-						<button>узнать больше</button>
 					</div>
-				</div>
-				<div class="slide3">
-					<div class="box">
-						<div class="headline">Только ночь, только хардкор</div>
-						<div class="slogan">
+					<div class="slide3">
+						<div class="box">
+							<h1>Только ночь, только хардкор</h1>
 							Работать днём, как все? Мы против этого.
 							Ближе к полуночи работа только начинается
+							<button>узнать больше</button>
 						</div>
-						<button>узнать больше</button>
+					</div>
+					<div class="buttons">
+						<button></button>
+						<button></button>
+						<button></button>
 					</div>
 				</div>
-				<div class="buttons">
-					<button></button>
-					<button></button>
-					<button></button>
-				</div>
-			</div>
-	<!------------------------------------------------------------------------------------------------------------------------>
-			<div class="advertisement">
-				<article class="adv">
-					<img src="img/web.png">
-					<h3>веб-сайты</h3>
-					<div class="slogan">
-						Мир никогда не будет прежним,
-						после того как увидит ваш сайт!
-					</div>
-					<button>заказать</button>
-				</article>
-				<article class="adv">
-					<img src="img/apps.png">
-					<h3>приложения</h3>
-					<div class="slogan">
-						Покорите топ 10 приложений в
-						AppStore и Google Play
-					</div>
-				</article>
-				<article class="adv">
-					<img src="img/presentations.png">
-					<h3>презентации</h3>
-					<div class="slogan">
-						Вы даже не подозреваете
-						о своей изумительности!
-					</div>
-				</article>
-			</div>
-	<!------------------------------------------------------------------------------------------------------------------------>
-			<div class="promo">
-				<article class="page">
-					<img src="img/promo.png">
-					<h4 class="uppercase">с 2004 года и любим точность во всём:</h4>
-					<span class="col">
-						<div><!--!Доразметить!-->
-							146<sup>%</sup>
-						</div>
-						Уровень самоотдачи
-					</span>
-					<span class="col">
+				<div class="advertisement">
+					<article class="adv">
+						<img src="img/web.png">
+						<h3>веб-сайты</h3>
 						<div>
-							100<sup>%</sup>
+							Мир никогда не будет прежним,
+							после того как увидит ваш сайт!
 						</div>
-						Соблюдение сроков
-					</span>
-					<span class="col">
+						<button>заказать</button>
+					</article>
+					<article class="adv">
+						<img src="img/apps.png">
+						<h3>приложения</h3>
 						<div>
-							50<sup>%</sup>
+							Покорите топ 10 приложений в
+							AppStore и Google
 						</div>
-						Минимальная предоплата
-					</span>
-				</article>
-				<div class="desc">
-					<h2>
-						Мы - маленькая, но гордая
-						дизайн-студия из Краснодара.
-					</h2>
-					<div class="slogan">
-						Исповедуем принципы минимализма и чистоты. Ставим математический расчёт
-						превыше креатива. Работаем не покладая рук, как роботы.
+						<button class="btnGreen">заказать</button>
+					</article>
+					<article class="adv">
+						<img src="img/presentations.png">
+						<h3>презентации</h3>
+						<div>
+							Вы даже не подозреваете
+							о своей изумительности!
+						</div>
+						<button class="btnYollow">заказать</button>
+					</article>
+					<div style="clear: both"></div><!--KOSTIL-->
+				</div>
+				<div class="promo">
+					<article class="page">
+						<img src="img/promo.png">
+						<h4>с 2004 года и любим точность во всём:</h4>
+						<div class="col">
+							<div>
+								146<sup>%</sup>
+							</div>
+							Уровень самоотдачи
+						</div>
+						<div class="col">
+							<div>
+								100<sup>%</sup>
+							</div>
+							Соблюдение сроков
+						</div>
+						<div class="col">
+							<div>
+								50<sup>%</sup>
+							</div>
+							Минимальная предоплата
+						</div>
+					</article>
+					<div class="desc">
+						<h2>
+							Мы - маленькая, но гордая
+							дизайн-студия из Краснодара.
+						</h2>
+						<div class="slogan">
+							Исповедуем принципы минимализма и чистоты. Ставим математический расчёт
+							превыше креатива. Работаем не покладая рук, как роботы.
+						</div>
+						<h4>выполняем заказы на разработку:</h4>
+						<ul>
+							<li>Веб-сайтов любой сложности</li>
+							<li>Мобильных приложений для <span class="uppercase">ios</span> и Android</li>
+							<li>Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
 					</div>
-					<h4>выполняем заказы на разработку</h4>
-					<ul>
-						<li>Веб-сайтов любой сложности</li>
-						<li>Мобильных приложений для <span class="uppercase">ios</span> и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
+					<div style="clear: both"></div><!--KOSTIL-->
+				</div>
+				<div class="commercial">
+					<img src="img/htmlacademy.png">
+					<img src="img/borodinski.png">
+					<img src="img/pink.png">
+					<img src="img/mishka.png">
 				</div>
 			</div>
-	<!------------------------------------------------------------------------------------------------------------------------>
-			<div class="commercial">
-				<img src="img/htmlacademy.png">
-				<img src="img/borodinski.png">
-				<img src="img/pink.png">
-				<img src="img/mishka.png">
-			</div>
-	<!------------------------------------------------------------------------------------------------------------------------>
 			<div class="map">
-				<div class="contants">
+				<div class="contacts">
 					<h4 class="uppercase">nёrds design studio</h4>
-					191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					<div>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+					<div class="phone">тел. +7(812) 275-75-75</div>
 					<button>напишете нам</button>
 				</div>
 			</div>
 		</main>
-<!---======================================================================================================================--->
 		<footer class="footer">
-			<div class="socials"></div><!--!Доразметить!-->
+			<div class="socials">
+				<button class="icon vk">
+					<img src="img/vk.png">
+				</button>
+				<button class="icon">
+					<img src="img/fb.png">
+				</button>
+				<button class="icon">
+					<img src="img/insta.png">
+				</button>
+			</div>
+			<div class="subtitle">Давайте дружить, это выгодно!</div>
+			Скидка 10% для друзей из социальных сетей.
 		</footer>
 	</body>
 </html>
