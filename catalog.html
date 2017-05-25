@@ -9,25 +9,38 @@
 		<header class="header">
 			<img src="img/logo.png">
 			<ul class="topnav">
-				<li><a href="#">студия</a></li>
+				<li><a href="index.html">студия</a></li>
 				<li><a href="#">клиенты</a></li>
-				<li><a href="index.html">главная</a></li>
 				<li><a href="#">магазин</a></li>
 				<li><a href="#">контакты</a></li>
 			</ul>
-			<div class="cart">
-				<div class="backet"></div>
-				корзина
-			</div>
+			<span class="cart">
+				<a href="#">корзина</a>
+			</span>
 		</header>
 		<main class="main">
 			<div class="wrapper">
 				<div class="headline">Магазин готовых шаблонов</div>
 				<div class="sidebar">
 					<h4>стоимость:</h4>
+					<div class="block"></div>
+					<div></div>
+					<h4>сетка:</h4>
+					<input type="radio" name="grid" value="adaptive">Адаптивная</br>
+					<input type="radio" name="grid" value="fixed" checked>Фиксированная</br>
+					<input type="radio" name="grid" value="">Резиновая
+					<h4>особенности:</h4>
+					<input type="checkbox">Слайдер</br>
+					<input type="checkbox">Блок приемуществ</br>
+					<input type="checkbox">Новости</br>
+					<input type="checkbox">Галерея</br>
+					<input type="checkbox">Корзина</br>
+					<input type="submit" value="показать">
 				</div>
 				<div class="content">
-					<div class="sort"></div>
+					<div class="sort">
+						<h4>сортировать:</h4>
+					</div>
 					<article class="product">
 						<img src="img/catalog/sedona.jpg">
 					</article>
