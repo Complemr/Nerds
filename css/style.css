@@ -1,19 +1,10 @@
-/*==================================================================================================================
-Normalize.css
-====================================================================================================================*/
-
-
-
-/*==================================================================================================================
-Index style
-====================================================================================================================*/
-
 body {
 	width: 100%;
 	font-family: arial;
 	font-size: 16px;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 	box-sizing: border-box;
 }
 
@@ -24,11 +15,11 @@ a {
 }
 
 a:hover {
-	color: #fa6467;
+	border: 1px solid blue;
 }
 
 a:active {
-	color: #c4c4c4;
+	background: #ff9;
 }
 
 button {
@@ -41,22 +32,12 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
-	box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.2);
-}
-
-button:active {
-	box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.4);
-	color: #c4c4c4;
-}
-
 h2, h3, h4 {
 	text-transform: uppercase;
 }
 
 ul {
 	list-style-type: none;
-	padding: 0;
 }
 
 header {
@@ -64,7 +45,7 @@ header {
 }
 
 header {
-	width: 1200px;
+	width: 1160px;
 	text-transform: uppercase;
 	padding: 20px 0;
 	margin: 0 auto;
@@ -73,6 +54,7 @@ header {
 }
 
 .topnav {
+	padding: 0;
 	display: inline-block;
 	
 }
@@ -82,10 +64,8 @@ header {
 	margin: 0 20px;
 }
 
-.cart::before {
-	content: url("../img/cart.png");
-	margin-right: 25px;
-	
+.cart {
+	display: inline-block;
 }
 
 .wrapper {
@@ -94,61 +74,28 @@ header {
 }
 
 .slider {
-	position: relative;
+	padding: 100px 0;
 }
 
-.slide1,
-.slide2,
-.slide3 {
-	height: 430px;
-	padding: 1px;
+.slide1 {
 	background-image: url("../img/bg_slide1.png");
-	background-repeat: no-repeat;
-	background-position: right bottom;
-}
-.slide2 {
-	background-image: url("../img/bg_slide2.png");
 }
 
-.slide3 {
-	background-image: url("../img/bg_slide3.png");
-}
-
-.slide2,
-.slide3 {
+.slide2, .slide3 {
 	display: none;
 }
 
 .box {
-	width: 320px;
-	position: relative;
-	top: 80px;
+	width: 360px;
 }
 
 .buttons {
-	position: absolute;
-	left: 48%;
-	bottom: 15%; 
-}
-.buttons button {
-	border-radius: 50%;
-	height: 20px;
-	width: 20px;
-	padding: 0;
-	margin: 0;
-	background: white;
+	display: inline-block;
+	margin-left: 40%;
 }
 
 .advertisement {
 	padding: 80px 0;
-}
-
-.advertisement::after,
-.promo::after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
 }
 
 .adv {
@@ -190,28 +137,15 @@ header {
 	margin-right: 10px;
 }
 
-.commercial{
-	opacity: 0.2;
-}
-
-.commercial img:hover {
-	opacity: 0.7;
-}
-
-.commercial img:active{
-	opacity: 0.3;
-}
-
 .map {
 	width:100%;
-	padding: 120px 0;
+	padding: 120px 12%;
 	background-image: url("../img/map.png");
 }
 
 .contacts {
 	width: 250px;
 	padding: 30px 50px;
-	margin-left: 12%;
 	background: white;
 }
 
@@ -228,14 +162,6 @@ header {
 .socials {
 	margin-right: 140px;
 	float: left;
-}
-
-.socials button:hover {
-	background: #e74246;
-}
-
-.socials:active img {
-	opacity: 0.5;
 }
 
 .icon {
@@ -257,25 +183,10 @@ header {
 	font-weight: bold;
 }
 
-[src*="bg_index"] {
-	height: 540px;
-}
-
-[src*="logo.png"]:hover {
-	opacity: 0.7;
-}
-
-[src*="logo.png"]:active {
-	opacity: 0.4;
-}
-
 [src*="bg"] {
 	width: 100%;
 	position: absolute;
 	z-index: -1000;
-}
-[src*="metka.png"] {
-	visibility: hidden;
 }
 
 /*================================================================================================================
@@ -296,12 +207,6 @@ Catalog style
 	margin-right: 140px;
 }
 
-.block {
-	height: 60px;
-	width: 260px;
-	background: #eee;
-}
-
 .content {
 	border: 2px solid blue;
 	padding-left: 400px;
@@ -309,11 +214,7 @@ Catalog style
 
 .sort {
 	border: 2px solid green;
-	padding: 10px;
-}
-
-.sort h4 {
-	display: inline;
+	height: 50px;
 }
 
 .product {
@@ -321,15 +222,12 @@ Catalog style
 	margin: 15px;
 }
 
-.product::before {
+.product:before {
 	content: url("../img/catalog/browser.png");
 	display: block;
-	opacity: 0.1;
+	border-bottom: 1px solid #ccc;
 }
 
-[type="submit"] {
-	width: 100%;
-	text-align: center;
-	padding: 10px 0;
-	background: #eee;
+[src*="browser.png"] {
+	display: block;
 }
