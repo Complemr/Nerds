@@ -25,17 +25,23 @@
 					<h4>стоимость:</h4>
 					<div class="block"></div>
 					<div></div>
-					<h4>сетка:</h4>
-					<input type="radio" name="grid" value="adaptive">Адаптивная</br>
-					<input type="radio" name="grid" value="fixed" checked>Фиксированная</br>
-					<input type="radio" name="grid" value="">Резиновая
-					<h4>особенности:</h4>
-					<input type="checkbox">Слайдер</br>
-					<input type="checkbox">Блок приемуществ</br>
-					<input type="checkbox">Новости</br>
-					<input type="checkbox">Галерея</br>
-					<input type="checkbox">Корзина</br>
-					<input type="submit" value="показать">
+					<form action="spearch.php" method="post">
+						<label>
+							<h4>сетка:</h4>
+							<input type="radio" name="grid" value="adaptive">Адаптивная<br>
+							<input type="radio" name="grid" value="fixed" checked>Фиксированная<br>
+							<input type="radio" name="grid" value="">Резиновая
+						</label>
+						<label>
+							<h4>особенности:</h4>
+							<input type="checkbox">Слайдер<br>
+							<input type="checkbox">Блок приемуществ<br>
+							<input type="checkbox">Новости<br>
+							<input type="checkbox">Галерея<br>
+							<input type="checkbox">Корзина<br>
+						</label>
+						<input type="submit" value="показать">
+					</form>
 				</div>
 				<div class="content">
 					<div class="sort">
