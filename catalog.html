@@ -5,40 +5,47 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<img src="img/bg_ctlg.png">
+		<div class="bgCatalog"></div>
 		<header class="header">
-			<img src="img/logo.png">
-			<ul class="topnav">
-				<li><a href="index.html">студия</a></li>
-				<li><a href="#">клиенты</a></li>
-				<li><a href="#">магазин</a></li>
-				<li><a href="#">контакты</a></li>
-			</ul>
-			<span class="cart">
-				<a href="#">корзина</a>
-			</span>
+			<div class="wrapper">
+				<img src="img/logo.png">
+				<ul class="topnav">
+					<li><a href="index.html">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li class="active"><a href="#" >магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<button class="cart">
+					корзина
+				</button>
+			</div>
 		</header>
+		
+		
 		<main class="main">
 			<div class="wrapper">
 				<div class="headline">Магазин готовых шаблонов</div>
+				
 				<div class="sidebar">
 					<h4>стоимость:</h4>
 					<div class="block"></div>
 					<div></div>
+					
 					<form action="spearch.php" method="post">
-						<label>
+						<label for="grid">
 							<h4>сетка:</h4>
-							<input type="radio" name="grid" value="adaptive">Адаптивная<br>
-							<input type="radio" name="grid" value="fixed" checked>Фиксированная<br>
-							<input type="radio" name="grid" value="">Резиновая
+							<input type="radio" name="adaptive" id="grid">Адаптивная<br>
+							<input type="radio" name="fixed" id="grid" checked>Фиксированная<br>
+							<input type="radio" name="third" id="grid">Резиновая
 						</label>
-						<label>
+						
+						<label for="features">
 							<h4>особенности:</h4>
-							<input type="checkbox">Слайдер<br>
-							<input type="checkbox">Блок приемуществ<br>
-							<input type="checkbox">Новости<br>
-							<input type="checkbox">Галерея<br>
-							<input type="checkbox">Корзина<br>
+							<input type="checkbox" id="features">Слайдер<br>
+							<input type="checkbox" id="features">Блок приемуществ<br>
+							<input type="checkbox" id="features">Новости<br>
+							<input type="checkbox" id="features">Галерея<br>
+							<input type="checkbox" id="features">Корзина<br>
 						</label>
 						<input type="submit" value="показать">
 					</form>
@@ -46,28 +53,85 @@
 				<div class="content">
 					<div class="sort">
 						<h4>сортировать:</h4>
+						<ul>
+							<li>по цене</li>
+							<li>по типу</li>
+							<li>по названию</li>
+						</ul>
+						<button class="down"></button>
+						<button class="up"></button>
 					</div>
+					
 					<article class="product">
 						<img src="img/catalog/sedona.jpg">
+						<div class="toCart">
+							<h3>sedona</h3>
+							<div>
+								Информационный сайт для туристов
+							</div>
+							<button>9900 руб.</button>
+						</div>
 					</article>
+					
 					<article class="product">
 						<img src="img/catalog/pink.jpg">
+						<div class="toCart">
+							<h3>pink app</h3>
+							<div>
+								Продуктовый лендинг приложения для ios и android
+							</div>
+							<button>9900 руб.</</button>
+						</div>
 					</article>
+					
 					<article class="product">
 						<img src="img/catalog/borodinski.jpg">
+						<div class="toCart">
+							<h3>barbershop</h3>
+							<div>
+								Сайт салоны красоты.
+								Да, для мужчин.
+							</div>
+							<button>9900 руб.</</button>
+						</div>
 					</article>
+					
 					<article class="product">
 						<img src="img/catalog/mishka.jpg">
+						<div class="toCart">
+							<h3>mishka</h3>
+							<div>
+								Интернет магазин вязанных игрушек
+							</div>
+							<button>9900 руб.</</button>
+						</div>
 					</article>
+					
 					<article class="product">
 						<img src="img/catalog/aplus.jpg">
+						<div class="toCart">
+							<h3>a plus</h3>
+							<div>
+								Лендинг курсов повышения квалификации
+							</div>
+							<button>9900 руб.</</button>
+						</div>
 					</article>
+					
 					<article class="product">
 						<img src="img/catalog/kvas.jpg">
+						<div class="toCart">
+							<h3>кваст</h3>
+							<div>
+								Промо-сайт производителя крафтового кваса
+							</div>
+							<button>9900 руб.</</button>
+						</div>
 					</article>
 					<div style="clear:both"></div>
 				</div>
 			</div>
+			
 			<div class="map">
 				<div class="contacts">
 					<h4 class="uppercase">nёrds design studio</h4>
@@ -77,18 +141,21 @@
 				</div>
 			</div>
 		</main>
+		
+		
 		<footer class="footer">
 			<div class="socials">
-				<button class="icon vk">
+				<a class="icon vk">
 					<img src="img/vk.png">
-				</button>
-				<button class="icon">
+				</a>
+				<a class="icon">
 					<img src="img/fb.png">
-				</button>
-				<button class="icon">
+				</a>
+				<a class="icon">
 					<img src="img/insta.png">
-				</button>
+				</a>
 			</div>
+			
 			<div class="subtitle">Давайте дружить, это выгодно!</div>
 			Скидка 10% для друзей из социальных сетей.
 		</footer>
