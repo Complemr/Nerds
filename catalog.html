@@ -32,24 +32,33 @@
 					<div></div>
 					
 					<form action="spearch.php" method="post">
-						<label for="grid">
+						<div class="formGroup1">
 							<h4>сетка:</h4>
-							<input type="radio" name="adaptive" id="grid">Адаптивная<br>
-							<input type="radio" name="fixed" id="grid" checked>Фиксированная<br>
-							<input type="radio" name="third" id="grid">Резиновая
-						</label>
+							<input type="radio" name="grid" id="adaptive">
+							<label for="adaptive">Адаптивная</label>
+							<input type="radio" name="grid" id="fixed" checked>
+							<label for="fixed">Фиксированная</label>
+							<input type="radio" name="grid" id="third">
+							<label for="third">Резиновая</label>
+						</div>
 						
-						<label for="features">
+						<div class="formGroup2">
 							<h4>особенности:</h4>
-							<input type="checkbox" id="features">Слайдер<br>
-							<input type="checkbox" id="features">Блок приемуществ<br>
-							<input type="checkbox" id="features">Новости<br>
-							<input type="checkbox" id="features">Галерея<br>
-							<input type="checkbox" id="features">Корзина<br>
-						</label>
+							<input type="checkbox" name="features" id="slider">
+							<label for="slider">Слайдер</label>
+							<input type="checkbox" name="features" id="blockFeatures">
+							<label for="blockFeatures">Блок приемуществ</label>
+							<input type="checkbox" name="features" id="news">
+							<label for="news">Новости</label>
+							<input type="checkbox" name="features" id="gallery">
+							<label for="gallery">Галерея</label>
+							<input type="checkbox" name="features" id="basket">
+							<label for="basket">Корзина</label>
+						</div>
 						<input type="submit" value="показать">
 					</form>
 				</div>
+				
 				<div class="content">
 					<div class="sort">
 						<h4>сортировать:</h4>
