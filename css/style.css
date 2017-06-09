@@ -455,8 +455,9 @@ Index style
 ====================================================================================================================*/
 body {
 	width: 100%;
-	font-family: arial;
+	font-family: Roboto, Arial;
 	font-size: 16px;
+	line-height: 1.5;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -468,7 +469,8 @@ a {
 	color: black;
 }
 
-a:hover {
+a:hover,
+.cart:hover {
 	color: #fa6467;
 }
 
@@ -478,8 +480,11 @@ a:active {
 
 button {
 	border: 0px;
+	border-radius: 2px;
+	font-weight: 700;
+	line-height: 0.6;
 	text-transform: uppercase;
-	padding: 10px 30px;
+	padding: 20px 55px;
 	margin: 20px 0;
 	color: white;
 	background: #fb565a;
@@ -496,7 +501,23 @@ button:active {
 	color: #c4c4c4;
 }
 
-h2, h3, h4 {
+h1 {
+	font-size: 55px;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 45px;
+	line-height: 1;
+	
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.25;
+}
+
+h3, h4 {
 	text-transform: uppercase;
 }
 
@@ -509,9 +530,10 @@ ul {
 
 header {
 	width: 100%;
+	font-weight: 700;
+	line-height: 1.9;
 	text-transform: uppercase;
 	padding: 20px 0;
-	margin: 0 auto;
 }
 
 .bgIndex,
@@ -537,7 +559,7 @@ header {
 	right: 0;
 	bottom: 0;
 	z-index: 10;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 
 .btnModal:hover {
@@ -546,15 +568,56 @@ header {
 
 .modal {
 	display: none;
-	height: 500px;
-	width: 500px;
+	min-height: 440px;
+	width: 760px;
+	padding: 75px 100px;
 	position: fixed;
 	top: 100px;
 	left: 50%;
 	z-index: 10;
-	margin-left: -250px;
+	margin-left: -480px;
 	box-shadow: 0 8px 20px 0;
 	background: white;
+}	
+
+.modal h2 {
+	margin-top: 0;
+}
+
+.modal div {
+	width: 360px;
+	margin-right: 36px;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.modal div + div {
+	margin-right: 0;
+}
+
+.modal label {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.modal input[type="text"] {
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+	width: 330px;
+	padding: 15px;
+}
+
+.modal textarea {
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+	min-height: 90px;
+	width: 730px;
+	padding: 15px;
+	display: block;
+}
+
+.modal textarea + button {
+	margin: 50px 0 0;
 }
 
 .open {
@@ -562,7 +625,20 @@ header {
 }
 
 .close {
-	float: right;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 85px;
+	right: 85px;
+	opacity: 0.3;
+	color: red;
+	background: transparent;
+}
+
+.close:hover {
+	opacity: 1;
+	box-shadow: 0 0 0 0;
 }
 
 .active::after {
@@ -574,6 +650,7 @@ header {
 }
 
 .topnav {
+	width: 450px;
 	display: inline-block;
 	vertical-align: top;
 	margin: 25px 85px 0 100px;
@@ -583,13 +660,20 @@ header {
 .topnav li {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 20px;
+	margin: 0 22px;
+}
+
+.topnav li:first-child,
+.topnav li:last-child {
+	margin: 0;
 }
 
 .cart {
+	width: 130px;
+	text-align: right;
 	vertical-align: top;
 	padding: 0;
-	margin: 25px 0 0 85px;
+	margin: 30px 0 0 85px;
 	color: black;
 	background: transparent;
 }
@@ -597,11 +681,18 @@ header {
 .cart::before {
 	content: url("../img/cart.png");
 	margin-right: 25px;
+	text-align: left;
 	
 }
 
+.cart:hover,
+.cart:active {
+	box-shadow: 0 0 0 0;
+	opacity: 1;
+}
+
 .wrapper {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	background: transparent;
 }
@@ -616,7 +707,18 @@ header {
 	display: none;
 	background-repeat: no-repeat;
 	background-position: right bottom;
+}
+
+.slide:nth-child(3) {
 	background-image: url("../img/bg_slide1.png");
+}
+
+.slide:nth-child(6) {
+	background-image: url("../img/bg_slide2.png");
+}
+
+.slide:nth-child(9) {
+	background-image: url("../img/bg_slide3.png");
 }
 
 #slideBtn1,
@@ -648,7 +750,7 @@ header {
 }
 
 .box {
-	width: 320px;
+	width: 410px;
 	position: relative;
 	top: 80px;
 }
@@ -667,7 +769,11 @@ header {
 .adv {
 	width: 300px;
 	float: left;
-	margin: 0 75px;
+	margin: 0 50px;
+}
+
+.adv button {
+	padding: 15px 40px;
 }
 
 .adv:first-child {
@@ -697,9 +803,22 @@ header {
 	float: right;
 }
 
+.page h4 {
+	font-weight: bold;
+}
+
 .col {
 	width: 33%;
 	float: left;
+}
+
+.col > div {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.col sup {
+	font-size: 28px;
 }
 
 .desc {
@@ -757,12 +876,22 @@ header {
 	background: white;
 }
 
+.contacts h4 {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+.contacts div {
+	line-height: 1.1;
+}
+
 .phone {
 	padding: 10px 0;
 }
 
 .footer {
 	width: 1200px;
+	line-height: 1.4;
 	padding: 80px 0;
 	margin: 0 auto;
 }
@@ -798,6 +927,7 @@ header {
 .subtitle {
 	font-size: 36px;
 	font-weight: bold;
+	line-height: 1;
 }
 
 [src*="logo.png"] {
@@ -822,6 +952,7 @@ Catalog style
 
 .headline {
 	font-size: 55px;
+	line-height: 1;
 	text-align: center;
 	padding: 90px 0;
 	margin-bottom: 60px;
@@ -829,6 +960,7 @@ Catalog style
 
 .sidebar {
 	width: 260px;
+	line-height: 1.25;
 	float: left;
 	margin-right: 140px;
 }
@@ -842,7 +974,7 @@ Catalog style
 }
 
 .form-group {
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 .block {
@@ -1015,10 +1147,27 @@ Catalog style
 	background: #eee;
 }
 
+.toCart div {
+	line-height: 1.1;
+}
+
+.number {
+	border-radius: 2px;
+	padding: 20px;
+	color: black;
+	background: #eee;
+}
+
+.actv {
+	border: 3px solid #eee;
+	background: white;
+}
+
 [type="submit"] {
 	border: 0;
 	width: 100%;
 	text-align: center;
 	padding: 10px 0;
+	margin: 50px 0;
 	background: #eee;
 }

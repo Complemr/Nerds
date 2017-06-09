@@ -4,12 +4,27 @@
 		<title>Nerds</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 	<body>
 		<div class="bgIndex"></div>
 		<button type="button" class="btnModal">тыкай!</button>
 		<div class="modal">
 			<button type="button" class="close">&#10005;</button>
+			<h2>Напишите нам</h2>
+			<form>
+				<div>
+					<label for="name">Ваше имя:</label>
+					<input type="text" placeholder="Представьтесь, пожалуйста" id="name">
+				</div>
+				<div>
+					<label for="mail">Ваш e-mail:</label>
+					<input type="text" placeholder="Для отправки ответа" id="mail">
+				</div>
+					<label for="message">Ваше сообщение:</label>
+					<textarea placeholder="В свободной форме" id="message"></textarea>
+				<button>отправить</button>
+			</form>
 		</div>
 		<header class="header">
 			<div class="wrapper">
@@ -20,7 +35,7 @@
 					<li><a href="catalog.html">магазин</a></li>
 					<li><a href="#">контакты</a></li>
 				</ul>
-				<button type="button" class="cart">
+				<button type="button" class="cart no">
 					корзина
 				</button>
 			</div>
@@ -39,7 +54,7 @@
 								Математически вверенный дизайн
 								для вашего сайта или мобильного приложения
 							</div>
-							<button type="button">узнать больше</button>
+							<button type="button" class="no">узнать больше</button>
 						</div>
 					</div>
 					<label for="slideBtn2"></label>
@@ -51,7 +66,7 @@
 								Никакого креатива, толька математические формулы
 								для расчёта идеальных пропорций.
 							</div>
-							<button type="button">узнать больше</button>
+							<button type="button" class="no">узнать больше</button>
 						</div>
 					</div>
 					<label for="slideBtn3"></label>
@@ -63,7 +78,7 @@
 								Работать днём, как все? Мы против этого.
 								Ближе к полуночи работа только начинается
 							</div>
-							<button type="button">узнать больше</button>
+							<button type="button" class="no">узнать больше</button>
 						</div>
 					</div>
 				</div>
@@ -76,7 +91,7 @@
 							Мир никогда не будет прежним,
 							после того как увидит ваш сайт!
 						</div>
-						<button type="button">заказать</button>
+						<button type="button" class="no">заказать</button>
 					</article>
 					<article class="adv">
 						<img src="img/apps.png">
@@ -85,7 +100,7 @@
 							Покорите топ 10 приложений в
 							AppStore и Google
 						</div>
-						<button type="button" class="btnGreen">заказать</button>
+						<button type="button" class="btnGreen no">заказать</button>
 					</article>
 					<article class="adv">
 						<img src="img/presentations.png">
@@ -94,7 +109,7 @@
 							Вы даже не подозреваете
 							о своей изумительности!
 						</div>
-						<button type="button" class="btnYollow">заказать</button>
+						<button type="button" class="btnYollow no">заказать</button>
 					</article>
 				</div>
 				
@@ -126,8 +141,8 @@
 							Мы - маленькая, но гордая
 							дизайн-студия из Краснодара.
 						</h2>
-						Исповедуем принципы минимализма и чистоты. Ставим математический расчёт
-						превыше креатива. Работаем не покладая рук, как роботы.
+							Исповедуем принципы минимализма и чистоты. Ставим математический расчёт
+							превыше креатива. Работаем не покладая рук, как роботы.
 						<h4>выполняем заказы на разработку:</h4>
 						<ul>
 							<li>Веб-сайтов любой сложности</li>
@@ -148,10 +163,10 @@
 			<div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616140023!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1496600345216" width="100%" height="512" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<div class="contacts">
-					<h4 class="uppercase">nёrds design studio</h4>
+					<h4>nёrds design studio</h4>
 					<div>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 					<div class="phone">тел. +7(812) 275-75-75</div>
-					<button type="button">напишете нам</button>
+					<button type="button" class="no">напишете нам</button>
 				</div>
 			</div>
 		</main>

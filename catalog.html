@@ -15,7 +15,7 @@
 					<li class="active"><a href="#" >магазин</a></li>
 					<li><a href="#">контакты</a></li>
 				</ul>
-				<button type="button" class="cart">
+				<button type="button" class="cart no">
 					корзина
 				</button>
 			</div>
@@ -31,7 +31,7 @@
 					<div class="block"></div>
 					<div class="form-group">
 						<form>
-							<label for="with"></label>
+							<label for="with">от</label>
 							<input type="text" id="with" value="0">
 							<label for="before">до</label>
 							<input type="text" id="before" value="15000">
@@ -66,7 +66,7 @@
 					</form>
 				</div>
 				
-				<div class="content">
+				<div class="content clearfix">
 					<div class="sort">
 						<h4>сортировать:</h4>
 						<ul>
@@ -74,8 +74,8 @@
 							<li>по типу</li>
 							<li>по названию</li>
 						</ul>
-						<button type="button" class="down"></button>
-						<button type="button" class="up"></button>
+						<button type="button" class="down no"></button>
+						<button type="button" class="up no"></button>
 					</div>
 					
 					<article class="product">
@@ -85,7 +85,7 @@
 							<div>
 								Информационный сайт для туристов
 							</div>
-							<button type="button">9900 руб.</button>
+							<button type="button" class="no">9900 руб.</button>
 						</div>
 					</article>
 					
@@ -96,7 +96,7 @@
 							<div>
 								Продуктовый лендинг приложения для ios и android
 							</div>
-							<button type="button">9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</</button>
 						</div>
 					</article>
 					
@@ -108,7 +108,7 @@
 								Сайт салоны красоты.
 								Да, для мужчин.
 							</div>
-							<button type="button">9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</</button>
 						</div>
 					</article>
 					
@@ -119,7 +119,7 @@
 							<div>
 								Интернет магазин вязанных игрушек
 							</div>
-							<button>9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</</button>
 						</div>
 					</article>
 					
@@ -130,7 +130,7 @@
 							<div>
 								Лендинг курсов повышения квалификации
 							</div>
-							<button type="button">9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</</button>
 						</div>
 					</article>
 					
@@ -141,10 +141,13 @@
 							<div>
 								Промо-сайт производителя крафтового кваса
 							</div>
-							<button type="button">9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</</button>
 						</div>
 					</article>
-					<div style="clear:both"></div>
+					<button type="button" class="number actv">1</button>
+					<button type="button" class="number">2</button>
+					<button type="button" class="number">3</button>
+					<button type="button" class="number">следующая</button>
 				</div>
 			</div>
 			
@@ -161,13 +164,13 @@
 		
 		<footer class="footer">
 			<div class="socials">
-				<a class="icon vk">
+				<a class="icon vk" href="#">
 					<img src="img/vk.png">
 				</a>
-				<a class="icon">
+				<a class="icon" href="#">
 					<img src="img/fb.png">
 				</a>
-				<a class="icon">
+				<a class="icon" href="#">
 					<img src="img/insta.png">
 				</a>
 			</div>
@@ -175,5 +178,6 @@
 			<div class="subtitle">Давайте дружить, это выгодно!</div>
 			Скидка 10% для друзей из социальных сетей.
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
