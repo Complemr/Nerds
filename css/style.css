@@ -453,6 +453,11 @@ template {
 /*==================================================================================================================
 Index style
 ====================================================================================================================*/
+
+* {
+	/*outline: 2px solid;*/
+}
+
 body {
 	width: 100%;
 	font-family: Roboto, Arial;
@@ -484,8 +489,8 @@ button {
 	font-weight: 700;
 	line-height: 0.6;
 	text-transform: uppercase;
-	padding: 20px 55px;
-	margin: 20px 0;
+	padding: 22px 50px;
+	margin: 30px 0;
 	color: white;
 	background: #fb565a;
 	cursor: pointer;
@@ -533,7 +538,7 @@ header {
 	font-weight: 700;
 	line-height: 1.9;
 	text-transform: uppercase;
-	padding: 20px 0;
+	padding-top: 20px;
 }
 
 .bgIndex,
@@ -545,11 +550,11 @@ header {
 }
 
 .bgIndex {
-	height: 540px;
+	height: 515px;
 }
 
 .bgCatalog {
-	height: 355px;
+	height: 325px;
 }
 
 .btnModal {
@@ -650,10 +655,10 @@ header {
 }
 
 .topnav {
-	width: 450px;
+	width: 460px;
 	display: inline-block;
 	vertical-align: top;
-	margin: 25px 85px 0 100px;
+	margin: 25px 70px 0 122px;
 	
 }
 
@@ -673,7 +678,7 @@ header {
 	text-align: right;
 	vertical-align: top;
 	padding: 0;
-	margin: 30px 0 0 85px;
+	margin: 30px 0 0 105px;
 	color: black;
 	background: transparent;
 }
@@ -702,8 +707,7 @@ header {
 }
 
 .slide {
-	height: 430px;
-	padding: 1px;
+	min-height: 420px;
 	display: none;
 	background-repeat: no-repeat;
 	background-position: right bottom;
@@ -750,13 +754,21 @@ header {
 }
 
 .box {
-	width: 410px;
-	position: relative;
-	top: 80px;
+	width: 510px;
+	position: absolute;
+	top: 30px;
+}
+
+.box h1 {
+	margin-bottom: 30px;
+}
+
+.box .slogan {
+	width: 420px;
 }
 
 .advertisement {
-	padding: 80px 0;
+	padding: 80px 0 55px;
 }
 
 .clearfix::after {
@@ -772,8 +784,13 @@ header {
 	margin: 0 50px;
 }
 
+.adv h3 {
+	margin: 20px 0;
+}
+
 .adv button {
-	padding: 15px 40px;
+	padding: 18px 38px;
+	margin-top: 32px;
 }
 
 .adv:first-child {
@@ -795,7 +812,7 @@ header {
 .promo {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
-	padding: 80px 0;
+	padding: 37px 0 60px;
 }
 
 .page {
@@ -805,11 +822,13 @@ header {
 
 .page h4 {
 	font-weight: bold;
+	margin-top: 27px; 
 }
 
 .col {
 	width: 33%;
 	float: left;
+	margin-top: 13px;
 }
 
 .col > div {
@@ -822,15 +841,24 @@ header {
 }
 
 .desc {
-	width: 660px;
+	width: 670px;
 	float: left;
 }
 
+.desc h2 {
+	margin: 32px 0;
+}
+
+
+.desc h4 {
+	margin: 45px 0 5px;
+}
 .desc ul {
 	margin: 0 40px;
 }
 
 .desc li {
+	line-height: 3;
 	position: relative;
 }
 
@@ -839,17 +867,23 @@ header {
 	height: 2px;
 	width: 25px;
 	position: absolute;
-	top: 8px;
+	top: 24px;
 	left: -40px;
 	background: #fb565a;
 }
 
 .commercial {
-	text-align: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 80px;
 }
 
 .commercial img {
+	margin-right: 22px;
 	opacity: 0.2;
+}
+
+.commercial img[src*="mishka.png"] {
+	margin: 0;
 }
 
 .commercial img:hover {
@@ -861,18 +895,21 @@ header {
 }
 
 .map {
-	height: 512px;
-	width:100%;
+	min-height: 420px;
+	width: 100%;
+	padding: 0;
 	position: relative;
 	background-image: url("../img/map.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .contacts {
-	width: 250px;
-	padding: 30px 50px;
+	width: 220px;
+	padding: 20px 50px;
 	position: absolute;
-	top: 25%;
-	left: 12%;
+	top: 13.5%;
+	left: 13.5%;
 	background: white;
 }
 
@@ -882,7 +919,16 @@ header {
 }
 
 .contacts div {
+	display: inline-block;
+}
+
+.contacts .location {
+	width: 205px;
 	line-height: 1.1;
+}
+
+.contacts button {
+	padding: 20px 40px;
 }
 
 .phone {
@@ -890,16 +936,16 @@ header {
 }
 
 .footer {
-	width: 1200px;
+	width: 1160px;
 	line-height: 1.4;
-	padding: 80px 0;
+	padding: 60px 0;
 	margin: 0 auto;
 }
 
 .socials {
-	width: 210px;
-	float: left;
-	margin-right: 140px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 127px;
 }
 
 .icon:active img {
@@ -908,26 +954,42 @@ header {
 
 .icon {
 	border-radius: 50%;
-	width: 60px;
+	height: 68px;
+	width: 68px;
 	text-align: center;
-	padding: 18px 0 16px;
-	margin: 0 5px;
+	/*padding: 20px 10px;*/
+	margin: 0 6px;
 	float: left;
 	background: #e1e1e1;
+}
+
+.icon:first-child {
+	margin-left: 0;
 }
 
 .icon:hover {
 	background: #e74246;
 }
 
-.vk {
-	padding-top: 22px;
+.icon img {
+	margin-top: 23px;
+}
+
+img[class="vk"] {
+	margin-top: 27px;
 }
 
 .subtitle {
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.afterWord {
+	padding: 3px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 [src*="logo.png"] {
@@ -954,15 +1016,20 @@ Catalog style
 	font-size: 55px;
 	line-height: 1;
 	text-align: center;
-	padding: 90px 0;
-	margin-bottom: 60px;
+	padding: 65px 0;
+	margin-bottom: 93px;
 }
 
 .sidebar {
 	width: 260px;
 	line-height: 1.25;
 	float: left;
-	margin-right: 140px;
+}
+
+.sidebar h4 {
+	font-size: 18px;
+	line-height: 1;
+	margin: 15px 0 30px;
 }
 
 .sidebar input[type="text"] {
@@ -980,6 +1047,7 @@ Catalog style
 .block {
 	height: 60px;
 	width: 260px;
+	margin-top: 30px;
 	background: #eee;
 }
 
@@ -1055,42 +1123,47 @@ Catalog style
 }
 
 .content {
-	padding-left: 400px;
+	padding-left: 396px;
 }
 
 .sort {
-	padding: 10px;
+	padding: 10px 0;
+	margin-bottom: 43px;
 }
 
 .sort h4 {
+	font-size: 18px;
+	line-height: 1;
 	display: inline;
-	margin-right: 130px;
-}
-
-.sort ul,
-.sort li {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.sort ul {
-	margin-left: 130px;
-}
-
-.sort li {
-	font-size: 14px;
-	text-transform: uppercase;
-	margin: 0 15px;
-	color: #cacaca;
-}
-
-.sort li:hover {
-	color: black;
+	margin-right: 260px;
 }
 
 .sort button {
+	font-weight: 400;
 	padding: 0;
 	margin: 0;
+	color: #cacaca;
+}
+
+.sort button:hover {
+	box-shadow: 0 0 0 0;
+	color: #8d8d8d;
+}
+
+.sort button:active {
+	color: black;
+}
+
+.sorting {
+	height: 14px;
+	line-height: 1.3;
+	color: black;
+	background: transparent;
+}
+
+.arrows {
+	margin-left: 47px;
+	display: inline-block;
 }
 
 .down,
@@ -1101,7 +1174,12 @@ Catalog style
 	background: url("../img/catalog/sort_down.png") no-repeat;
 }
 
-.up {
+.arrows .down {
+	margin-right: 8px;
+}
+
+.arrows .up {
+	margin-left: 8px;
 	background: url("../img/catalog/sort_up.png") no-repeat;
 }
 
@@ -1117,7 +1195,15 @@ Catalog style
 	width: 360px;
 	float: left;
 	position: relative;
-	margin: 15px;
+	margin: 0 20px 30px 20px;
+}
+
+.product:nth-child(even) {
+	margin-left: 0;
+}
+
+.product:nth-child(odd) {
+	margin-right: 0;
 }
 
 .product::before {
