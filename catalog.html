@@ -3,6 +3,7 @@
 		<title>Nerds-Catalog</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 	<body>
 		<div class="bgCatalog"></div>
@@ -12,7 +13,7 @@
 				<ul class="topnav">
 					<li><a href="index.html">студия</a></li>
 					<li><a href="#">клиенты</a></li>
-					<li class="active"><a href="#" >магазин</a></li>
+					<li class="active"><a>магазин</a></li>
 					<li><a href="#">контакты</a></li>
 				</ul>
 				<button type="button" class="cart no">
@@ -69,13 +70,13 @@
 				<div class="content clearfix">
 					<div class="sort">
 						<h4>сортировать:</h4>
-						<ul>
-							<li>по цене</li>
-							<li>по типу</li>
-							<li>по названию</li>
-						</ul>
-						<button type="button" class="down no"></button>
-						<button type="button" class="up no"></button>
+						<button type="button" class="sorting">по цене</button>
+						<button type="button" class="sorting">по типу</button>
+						<button type="button" class="sorting">по названию</button>
+						<div class="arrows">
+							<button type="button" class="down no"></button>
+							<button type="button" class="up no"></button>
+						</div>
 					</div>
 					
 					<article class="product">
@@ -164,8 +165,8 @@
 		
 		<footer class="footer">
 			<div class="socials">
-				<a class="icon vk" href="#">
-					<img src="img/vk.png">
+				<a class="icon" href="#">
+					<img class="vk" src="img/vk.png">
 				</a>
 				<a class="icon" href="#">
 					<img src="img/fb.png">
@@ -174,9 +175,10 @@
 					<img src="img/insta.png">
 				</a>
 			</div>
-			
-			<div class="subtitle">Давайте дружить, это выгодно!</div>
-			Скидка 10% для друзей из социальных сетей.
+			<div class="afterWord">
+				<div class="subtitle">Давайте дружить, это выгодно!</div>
+				Скидка 10% для друзей из социальных сетей.
+			</div>
 		</footer>
 		<script src="js/script.js"></script>
 	</body>
