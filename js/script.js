@@ -25,20 +25,18 @@ main.addEventListener("click", function(){
 footer.addEventListener("click", function(){
 	modal.classList.remove("open");
 })
-/*
-function initialize() {     
-	var myLatlng = new google.maps.LatLng(-34.397, 150.644);
-	var myOptions = {
-		zoom: 8,
-		center: myLatlng,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	}
-	var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-}
 
-var marker = new google.maps.Marker({
-	position: myLatlng,
-	map: map,
-	title:"Hello World!" 
-});
-*/
+ function initMap() {
+	var uluru = {lat: 59.938796, lng: 30.323081};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: uluru
+		});
+	var marker = new google.maps.Marker({
+		position: uluru,
+		map: map,
+		icon: {
+			url: "img/map_marker.png"
+		}
+	});
+}
