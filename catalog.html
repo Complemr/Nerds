@@ -29,22 +29,26 @@
 				
 				<div class="sidebar">
 					<h4>стоимость:</h4>
-					<div class="block"></div>
+					<div class="block">
+						<div class="line">
+							<div class="lineGreen"></div>
+						</div>
+					</div>
 					<div class="form-group">
 						<form>
 							<label for="with">от</label>
 							<input type="text" id="with" value="0">
 							<label for="before">до</label>
-							<input type="text" id="before" value="15000">
+							<input type="text" id="before" value="15 000">
 						</form>
 					</div>
 					
 					<form action="spearch.php" method="post">
 						<div class="formGroup1">
 							<h4>сетка:</h4>
-							<input type="radio" name="grid" id="adaptive">
+							<input type="radio" name="grid" id="adaptive" checked>
 							<label for="adaptive">Адаптивная</label>
-							<input type="radio" name="grid" id="fixed" checked>
+							<input type="radio" name="grid" id="fixed">
 							<label for="fixed">Фиксированная</label>
 							<input type="radio" name="grid" id="third">
 							<label for="third">Резиновая</label>
@@ -52,11 +56,11 @@
 						
 						<div class="formGroup2">
 							<h4>особенности:</h4>
-							<input type="checkbox" name="features" id="slider">
+							<input type="checkbox" name="features" id="slider" checked>
 							<label for="slider">Слайдер</label>
 							<input type="checkbox" name="features" id="blockFeatures">
 							<label for="blockFeatures">Блок приемуществ</label>
-							<input type="checkbox" name="features" id="news">
+							<input type="checkbox" name="features" id="news" checked>
 							<label for="news">Новости</label>
 							<input type="checkbox" name="features" id="gallery">
 							<label for="gallery">Галерея</label>
@@ -80,7 +84,7 @@
 					</div>
 					
 					<article class="product">
-						<img src="img/catalog/sedona.jpg">
+						<img src="img/catalog/sedona.jpg" alt="Sedona">
 						<div class="toCart">
 							<h3>sedona</h3>
 							<div>
@@ -91,7 +95,7 @@
 					</article>
 					
 					<article class="product">
-						<img src="img/catalog/pink.jpg">
+						<img src="img/catalog/pink.jpg" alt="Pink">
 						<div class="toCart">
 							<h3>pink app</h3>
 							<div>
@@ -102,7 +106,7 @@
 					</article>
 					
 					<article class="product">
-						<img src="img/catalog/borodinski.jpg">
+						<img src="img/catalog/borodinski.jpg" alt="Borodinski">
 						<div class="toCart">
 							<h3>barbershop</h3>
 							<div>
@@ -114,18 +118,18 @@
 					</article>
 					
 					<article class="product">
-						<img src="img/catalog/mishka.jpg">
+						<img src="img/catalog/mishka.jpg" alt="Mishka">
 						<div class="toCart">
 							<h3>mishka</h3>
 							<div>
 								Интернет магазин вязанных игрушек
 							</div>
-							<button type="button" class="no">9900 руб.</</button>
+							<button type="button" class="no">9900 руб.</button>
 						</div>
 					</article>
 					
 					<article class="product">
-						<img src="img/catalog/aplus.jpg">
+						<img src="img/catalog/aplus.jpg" alt="A plus">
 						<div class="toCart">
 							<h3>a plus</h3>
 							<div>
@@ -136,7 +140,7 @@
 					</article>
 					
 					<article class="product">
-						<img src="img/catalog/kvas.jpg">
+						<img src="img/catalog/kvas.jpg" alt="Кваст">
 						<div class="toCart">
 							<h3>кваст</h3>
 							<div>
@@ -148,16 +152,17 @@
 					<button type="button" class="number actv">1</button>
 					<button type="button" class="number">2</button>
 					<button type="button" class="number">3</button>
-					<button type="button" class="number">следующая</button>
+					<button type="button" class="next">следующая</button>
 				</div>
 			</div>
 			
 			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616140023!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1496600345216" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<div class="contacts">
-					<h4 class="uppercase">nёrds design studio</h4>
-					<div>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+					<h4>nёrds design studio</h4>
+					<div class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 					<div class="phone">тел. +7(812) 275-75-75</div>
-					<button type="button">напишете нам</button>
+					<button type="button" class="no">напишете нам</button>
 				</div>
 			</div>
 		</main>
